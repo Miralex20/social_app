@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyBook</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/9d854c2cd5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9d854c2cd5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
@@ -22,8 +25,56 @@
           <img src="images/search.png" />
           <input type="text" placeholder="Search" />
         </div>
-        <div class="nav-user-icon online">
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
           <img src="images/profile-pic.jpeg" />
+        </div>
+      </div>
+
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="images/profile-pic.jpeg" />
+            <div>
+              <p>Ohuka Miracle</p>
+              <a href="#">See yout profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a>Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="setting-links">
+            <img src="images/setting.png" class="settings-icon" />
+            <a href="#"
+              >Settings & Privacy <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help & Support <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility<img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/logout.png" class="settings-icon" />
+            <a href="#">Logout <img src="images/arrow.png" width="10px" /></a>
+          </div>
         </div>
       </div>
     </nav>
@@ -50,14 +101,215 @@
       <!--MAIN CONTENT-->
       <div class="main-content">
         <div class="story-gallery">
-          <div class="story">
-            <img src="images/upload.png" >
+          <div class="story story1">
+            <img src="images/upload.png" />
             <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="images/member-2.png" />
+            <p>Shelly Clair</p>
+          </div>
+          <div class="story story3">
+            <img src="images/member-3.png" />
+            <p>Isaac Bright</p>
+          </div>
+          <div class="story story4">
+            <img src="images/member-4.png" />
+            <p>Rosemary James</p>
+          </div>
+          <div class="story story5">
+            <img src="images/member-1.png" />
+            <p>Paul Zach</p>
           </div>
         </div>
 
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.jpeg" />
+            <div>
+              <p>Ohuka Miracle</p>
+              <small>Public <i class="fa-solid fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              placeholder="What's on your mind, Miracle"
+              rows="3"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#"><img src="images/live-video.png" />Live Video</a>
+              <a href="#"><img src="images/photo.png" />Photo/Video</a>
+              <a href="#"><img src="images/feeling.png" />Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="post-container">
+          <div class="post-rows">
+            <div class="user-profile">
+              <img src="images/profile-pic.jpeg" />
+              <div>
+                <p>Ohuka Miracle</p>
+                <span>July 28 2023, 1:40 pm</span>
+              </div>
+            </div>
+            <div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum
+            ipsa repellat magnam voluptate, aspernatur soluta nesciunt numquam.
+            Reprehenderit, sit!
+          </p>
+          <img src="images/feed-image-1.png" class="post-img" />
 
+          <div class="post-rows">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />25</div>
+              <div><img src="images/share.png" />20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.jpeg" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-rows">
+            <div class="user-profile">
+              <img src="images/profile-pic.jpeg" />
+              <div>
+                <p>Isaac Bright</p>
+                <span>July 28 2023, 1:40 pm</span>
+              </div>
+            </div>
+            <div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum
+            ipsa repellat magnam voluptate, aspernatur soluta nesciunt numquam.
+            Reprehenderit, sit!
+          </p>
+          <img src="images/feed-image-2.png" class="post-img" />
+
+          <div class="post-rows">
+            <div class="activity-icons">
+              <div><img src="images/like.png" />120</div>
+              <div><img src="images/comments.png" />25</div>
+              <div><img src="images/share.png" />20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.jpeg" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-rows">
+            <div class="user-profile">
+              <img src="images/profile-pic.jpeg" />
+              <div>
+                <p>Ohuka Miracle</p>
+                <span>July 28 2023, 1:40 pm</span>
+              </div>
+            </div>
+            <div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum
+            ipsa repellat magnam voluptate, aspernatur soluta nesciunt numquam.
+            Reprehenderit, sit!
+          </p>
+          <img src="images/feed-image-3.png" class="post-img" />
+
+          <div class="post-rows">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />25</div>
+              <div><img src="images/share.png" />20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.jpeg" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-rows">
+            <div class="user-profile">
+              <img src="images/profile-pic.jpeg" />
+              <div>
+                <p>Ohuka Miracle</p>
+                <span>July 28 2023, 1:40 pm</span>
+              </div>
+            </div>
+            <div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum
+            ipsa repellat magnam voluptate, aspernatur soluta nesciunt numquam.
+            Reprehenderit, sit!
+          </p>
+          <img src="images/feed-image-4.png" class="post-img" />
+
+          <div class="post-rows">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />25</div>
+              <div><img src="images/share.png" />20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.jpeg" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-rows">
+            <div class="user-profile">
+              <img src="images/profile-pic.jpeg" />
+              <div>
+                <p>Ohuka Miracle</p>
+                <span>July 28 2023, 1:40 pm</span>
+              </div>
+            </div>
+            <div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum
+            ipsa repellat magnam voluptate, aspernatur soluta nesciunt numquam.
+            Reprehenderit, sit!
+          </p>
+          <img src="images/feed-image-5.png" class="post-img" />
+
+          <div class="post-rows">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />25</div>
+              <div><img src="images/share.png" />20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.jpeg" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more-btn">Load More</button>
       </div>
       <!--RIGHT SIDEBAR-->
       <div class="right-sidebar">
@@ -76,46 +328,52 @@
             <p><i class="fa-solid fa-location-dot"></i>ALX Abuja Hub</p>
             <a href="#">More info</a>
           </div>
-            </div>
-            <div class="event">
-                <div class="left-event">
-                  <h3>03</h3>
-                  <span>August</span>
-                </div>
-                <div class="right-event">
-                  <h4>ATBU Resumption</h4>
-                  <p><i class="fa-solid fa-location-dot"></i>Yelwa Campus</p>
-                  <a href="#">More info</a>
         </div>
-      </div>
-      <div class="sidebar-title">
-        <h4>Advertisement</h4>
-        <a href="#">Close</a>
-      </div>
-      <img src="images/advertisement.png" class="sidebar-ads">
-      <div class="sidebar-title">
-        <h4>Conversation</h4>
-        <a href="#">Hide Chat</a>
-      </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>03</h3>
+            <span>August</span>
+          </div>
+          <div class="right-event">
+            <h4>ATBU Resumption</h4>
+            <p><i class="fa-solid fa-location-dot"></i>Yelwa Campus</p>
+            <a href="#">More info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement.png" class="sidebar-ads" />
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
 
-      <div class="online-list">
-        <div class="online">
-          <img src="images/member-1.png" >
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-1.png" />
+          </div>
+          <p>Shelly Clair</p>
         </div>
-        <p>Shelly Clair</p>
-      </div>
-      <div class="online-list">
-        <div class="online">
-          <img src="images/member-2.png" >
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-2.png" />
+          </div>
+          <p>Isaac Bright</p>
         </div>
-        <p>Isaac Bright</p>
-      </div>
-      <div class="online-list">
-        <div class="online">
-          <img src="images/member-3.png" >
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-3.png" />
+          </div>
+          <p>Rosemary James</p>
         </div>
-        <p>Rosemary James</p>
       </div>
     </div>
+
+    <div class="footer">
+      <p>Copyright 2023 - Angeli_Dev</p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
